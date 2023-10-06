@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="Home.html" >Home</a>
+        <a href="#about" >About</a>
+        <a href="skills">Career</a>
+        <a href="stories.html">Stories</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form onsubmit="return validate()" action="bio.html">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<script>
+    function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>
+<script>
+  function validate()
+  {
+  var firstname=document.getElementById("fname").value;
+  var lastname=document.getElementById("lname").value;
+  if(firstname==''|| lastname=='')
+  {
+    alert('First Name and last Name is required');
+    return false;
+  }
+  else
+  {
+    return true;
+  }
+  }
+</script>
+</body>
+</html>
