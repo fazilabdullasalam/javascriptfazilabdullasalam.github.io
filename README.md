@@ -1,2 +1,2 @@
 # javascriptfazilabdullasalam.github.io
-I have skillfully crafted a portfolio that represents a blend of my achievements and imaginative elements, adding a touch of creativity to showcase my capabilities.
+I have thoughtfully composed a portfolio, infusing creativity and highlighting my abilities; however, please note that due to time constraints, there may be some inaccuracies in the code that I didn't have ample time to thoroughly review
